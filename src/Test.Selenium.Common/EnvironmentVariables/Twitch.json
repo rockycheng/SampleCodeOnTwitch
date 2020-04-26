@@ -1,0 +1,17 @@
+﻿{
+  "AutoTestSnapshotPath": "D:/AutomatedTest/Twitch/Snapshot/",
+  "TwitchUrl": "https://www.twitch.tv/",
+  "SeleniumRCUrl": "",
+  // TestBrowser: Chrome, Firefox, IE
+  "TestBrowser": "Chrome",
+  // Delay Time
+  "DelaySeconds": 1,
+  // Waiting for find the element
+  "FindElementWaitingTimeoutBySeconds": 1,
+  "DefaultRetryTimeBySeconds": 1,
+  "RetryTimes": 10,
+  //{Your Twitch account}
+  "Account": "",
+  //{Your Twitch password}
+  "Password": ""
+}

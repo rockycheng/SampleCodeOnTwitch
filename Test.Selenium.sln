@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Scenario", "src\Test.Selenium\Test.Scenario.csproj", "{AF152921-701C-4A05-AC5A-78DB38EFE783}"
+	ProjectSection(ProjectDependencies) = postProject
+		{704F4CF9-F824-4923-A50C-F21984AB99CB} = {704F4CF9-F824-4923-A50C-F21984AB99CB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Selenium.Common", "src\Test.Selenium.Common\Test.Selenium.Common.csproj", "{DA893F65-8AF2-4031-BA43-DC80B5170FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automated.Selenium.SharedLibrary", "src\Automated.Selenium.SharedLibrary\Automated.Selenium.SharedLibrary.csproj", "{704F4CF9-F824-4923-A50C-F21984AB99CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF152921-701C-4A05-AC5A-78DB38EFE783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF152921-701C-4A05-AC5A-78DB38EFE783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF152921-701C-4A05-AC5A-78DB38EFE783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF152921-701C-4A05-AC5A-78DB38EFE783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA893F65-8AF2-4031-BA43-DC80B5170FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA893F65-8AF2-4031-BA43-DC80B5170FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA893F65-8AF2-4031-BA43-DC80B5170FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA893F65-8AF2-4031-BA43-DC80B5170FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{704F4CF9-F824-4923-A50C-F21984AB99CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{704F4CF9-F824-4923-A50C-F21984AB99CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{704F4CF9-F824-4923-A50C-F21984AB99CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{704F4CF9-F824-4923-A50C-F21984AB99CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FD5C8B1-2F45-4CA6-A100-F3CC4379E642}
+	EndGlobalSection
+EndGlobal
