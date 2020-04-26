@@ -18,22 +18,21 @@ namespace Test.Selenium.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TwitchTestPlan")]
-    public partial class TwitchTestPlanFeature
+    [NUnit.Framework.DescriptionAttribute("TC_01")]
+    public partial class TC_01Feature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "TwitchTestPlan.feature"
+#line 1 "TC_01.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TwitchTestPlan", "\tIn order to confirm the candidate Rocky Cheng\'s\' experience.\r\n\tAs a Swag intervi" +
-                    "ewer\r\n\tWe support the off-site testing,  testing some feature for https://www.tw" +
-                    "itch.tv/", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "TC_01", "\tIn order to confirm the specific video play function\r\n\tAs a swag candidate \r\n\tRo" +
+                    "cky Cheng supports automated test script for https://www.twitch.tv/", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -72,11 +71,11 @@ namespace Test.Selenium.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC_01_Check the specific video play function")]
+        [NUnit.Framework.DescriptionAttribute("01_000_Confirm_The_Index_Page")]
         [NUnit.Framework.CategoryAttribute("Twitch")]
-        public virtual void TC_01_CheckTheSpecificVideoPlayFunction()
+        public virtual void _01_000_Confirm_The_Index_Page()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC_01_Check the specific video play function", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01_000_Confirm_The_Index_Page", null, new string[] {
                         "Twitch"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -85,6 +84,40 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("Enter the TWITCH web site url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.Then("ConfirmWebSite /", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("01_001_Confirm_The_Specific_Video_Can_Play")]
+        [NUnit.Framework.CategoryAttribute("Twitch")]
+        public virtual void _01_001_Confirm_The_Specific_Video_Can_Play()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01_001_Confirm_The_Specific_Video_Can_Play", null, new string[] {
+                        "Twitch"});
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 13
+ testRunner.Given("Input Monster Hunter World The_Elegist On Input_Search By cssSelector", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 14
+ testRunner.Given("Click Button_Search By cssSelector", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 15
+ testRunner.Given("Click Video_Latest By cssSelector", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+ testRunner.Given("Snapshot Warn_Accept page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+ testRunner.Given("Click Warn_Accept By cssSelector", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 18
+ testRunner.Given("Snapshot Video_Stream_Zero_Sceond page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 19
+ testRunner.Given("Wait For 5 seconds", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 20
+ testRunner.When("Click Button_VideoPlayer By cssSelector", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 21
+ testRunner.Then("Snapshot Video_Stream_Five_Sceond page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 22
+ testRunner.Then("Quit_browserAndDeleteChromeDriverTempFolder", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

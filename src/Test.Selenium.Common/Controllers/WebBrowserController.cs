@@ -90,6 +90,11 @@
             WebBrowserService.Press(1000, element, inputValue);
         }
 
+        public void SendKeyEveryFiveHundredMilliseconds(IWebElement element, string inputValue)
+        {
+            WebBrowserService.Press(500, element, inputValue);
+        }
+
         public void SetBrowserSizeFromConfig()
         {
             WebBrowserService.SetBrowserSize();

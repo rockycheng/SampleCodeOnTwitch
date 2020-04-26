@@ -66,22 +66,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\TwitchTestPlan.feature.cs">
+    <Compile Include="Features\TC_01.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TwitchTestPlan.feature</DependentUpon>
+      <DependentUpon>TC_01.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Configurations\Log4net\IG.config">
+    <None Include="Configurations\Log4net\Twitch.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
-    <None Include="Features\TwitchTestPlan.feature">
+    <None Include="Features\TC_01.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TwitchTestPlan.feature.cs</LastGenOutput>
+      <LastGenOutput>TC_01.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

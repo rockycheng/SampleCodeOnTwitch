@@ -1,4 +1,7 @@
 ﻿{
-  "": "",
-  "Button_Login": ".izU2O a"
+  "Input_Search": "input[type='search']",
+  "Button_Search": "div[data-test-selector='combo-input'] button",
+  "Video_Latest": "div.search-results a[href*='/the_elegist/']",
+  "Warn_Accept": "[data-a-target='player-overlay-mature-accept']",
+  "Button_VideoPlayer": "[data-a-target='player-play-pause-button']"
 }

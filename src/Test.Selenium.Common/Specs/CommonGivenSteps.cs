@@ -1,3 +1,5 @@
+using System;
+
 namespace Test.Selenium.Common.Specs
 {
     using System.Threading;
@@ -66,6 +68,13 @@ namespace Test.Selenium.Common.Specs
         {
             _log.Info("Sleep for " + sleepTime + "second");
             Thread.Sleep(TimerController.SetDelayTimeBySecond(sleepTime));
+        }
+
+        [Given(@"Snapshot (.*) page")]
+        public void GivenSnapshot_Page(string shapshotFileName)
+        {
+            var recordTimeStamp = DateTime.Now.ToString("MMddHHmmss.ffff");
+            CommonController.SnapShotProcess($"[{recordTimeStamp}]_CustomizeSnapshot_{shapshotFileName}");
         }
         #endregion
 

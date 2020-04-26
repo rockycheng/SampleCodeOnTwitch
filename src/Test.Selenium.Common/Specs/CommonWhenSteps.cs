@@ -56,6 +56,14 @@
             WebElementsController.InputValueToElement(cssSelector, value, tag);
         }
 
+        [When(@"Press (.*) On (.*) Via Keyboard")]
+        public void WhenPress_ViaKeyboard(string keyValue, string elementName)
+        {
+            var elementSelector = ElementSelectorOnPageObjects.GetElementSelectorOnTwitchPageObjects(elementName);
+            var element = WebElementsController.FindElementByCssSelector(elementSelector);
+            WebBrowserController.KeyIn(element, keyValue);
+        }
+
         #endregion
     }
 }
