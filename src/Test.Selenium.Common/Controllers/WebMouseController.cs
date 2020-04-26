@@ -1,4 +1,6 @@
-﻿namespace Test.Selenium.Common.Controllers
+﻿using System.Net.NetworkInformation;
+
+namespace Test.Selenium.Common.Controllers
 {
     using System;
     using Automated.Selenium.SharedLibrary.WebElementsAPI;
@@ -10,8 +12,8 @@
 
         private static ILog _log = LogManager.GetLogger(typeof(WebMouseController));
         private static Lazy<WebMouseController> _instance = new Lazy<WebMouseController>(() => new WebMouseController());
-        private WebMouseService WebMouseService => Automated.Selenium.SharedLibrary.WebElementsAPI.WebMouseService.Instance;
-
+        private WebMouseService WebMouseService => WebMouseService.Instance;
+        private WebElementsController WebElementsController => WebElementsController.Instance;
         #region "private"
 
         private WebMouseController()
@@ -46,8 +48,9 @@
             WebMouseService.MouseOverToElementAndDoubleClick(element);
         }
 
-        public void MouseOverToElement(IWebElement element)
+        public void MouseOverToElement(string cssSelector)
         {
+            var element = WebElementsController.FindElementByCssSelector(cssSelector);
             WebMouseService.MouseOverToElement(element);
         }
 

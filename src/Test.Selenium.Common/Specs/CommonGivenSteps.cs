@@ -19,6 +19,7 @@ namespace Test.Selenium.Common.Specs
         private WebBrowserController WebBrowserController = WebBrowserController.Instance;
         private WebElementsController WebElementsController = WebElementsController.Instance;
         private CommonController CommonController = CommonController.Instance;
+        private WebMouseController WebMouseController = WebMouseController.Instance;
 
         [Given(@"Enter the (.*) web site url")]
         public void GivenEnterThe_WebSiteUrl(string webSite)
@@ -76,6 +77,14 @@ namespace Test.Selenium.Common.Specs
             var recordTimeStamp = DateTime.Now.ToString("MMddHHmmss.ffff");
             CommonController.SnapShotProcess($"[{recordTimeStamp}]_CustomizeSnapshot_{shapshotFileName}");
         }
+
+        [Given(@"Mouse move to (.*) content")]
+        public void GivenMouseMoveToVideoContent(string elementName)
+        {
+            var cssSelector = ElementSelectorOnPageObjects.GetElementSelectorOnTwitchPageObjects(elementName);
+            WebMouseController.MouseOverToElement(cssSelector);
+        }
+
         #endregion
 
     }

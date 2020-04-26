@@ -113,10 +113,8 @@ this.ScenarioInitialize(scenarioInfo);
 #line 19
  testRunner.Given("Wait For 5 seconds", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 20
- testRunner.When("Click Button_VideoPlayer By cssSelector", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
  testRunner.Then("Snapshot Video_Stream_Five_Sceond page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 22
+#line 21
  testRunner.Then("Quit_browserAndDeleteChromeDriverTempFolder", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

@@ -119,11 +119,11 @@
             _log.Info("Input value: " + cleanValue + " to element: " + cssSelector);
             var element = GetElementObject(cssSelector, tag);
             ////This function is mean one step, so on some page will fail.
-            //var cleanElement = CleanOriginTextInsideElement(element);
-            //WebBrowserController.SendKey(cleanElement, cleanValue);
+            var cleanElement = CleanOriginTextInsideElement(element);
+            WebBrowserController.SendKey(cleanElement, cleanValue);
             ////SelectAll
             //element.SendKeys(Keys.Control + 'a');
-            WebBrowserController.SendKeyEveryFiveHundredMilliseconds(element, cleanValue);
+            //WebBrowserController.SendKeyEveryFiveHundredMilliseconds(element, cleanValue);
         }
 
 

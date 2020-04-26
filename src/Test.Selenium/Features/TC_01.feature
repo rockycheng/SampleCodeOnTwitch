@@ -17,7 +17,6 @@ Scenario: 01_001_Confirm_The_Specific_Video_Can_Play
 	Given Click Warn_Accept By cssSelector
 	Given Snapshot Video_Stream_Zero_Sceond page
 	Given Wait For 5 seconds
-	When Click Button_VideoPlayer By cssSelector
 	Then Snapshot Video_Stream_Five_Sceond page
 	Then Quit_browserAndDeleteChromeDriverTempFolder
 	

@@ -105,7 +105,10 @@
                     result = CommonService.GetPassword();
                 }
             }
-           
+            else
+            {
+                result = value;
+            }
             _log.Info("Translate process done: " + result);
             return result;
         }
