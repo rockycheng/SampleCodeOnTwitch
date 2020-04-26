@@ -1,2 +1,7 @@
 # SampleCodeOnTwitch
-Run Some Test On Twitch
+
+TestCase --> Put All Test Case Plan 
+
+Build With Specflow, Selenium, Nunit3
+
+
