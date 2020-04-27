@@ -1,11 +1,5 @@
 # SampleCodeOnTwitch
 
-TestCase --> Put All Test Case Plan 
-
-Build With Specflow, Selenium, Nunit3
-
-# Project Title
-
 Test On Twitch
 
 ## Getting Started
