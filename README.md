@@ -8,7 +8,7 @@ Test On Twitch
 
 2. The RESULT snapshot will save on "D:\AutomatedTest\Twitch\Snapshot\{DATE}"
 
-### Prerequisites
+## Prerequisites
 
 1.Install Visual Studio 2019 IDE
 
