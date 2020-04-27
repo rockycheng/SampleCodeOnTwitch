@@ -5,12 +5,14 @@ Test On Twitch
 ## Getting Started
 
 1. The all test case folder, locate on "TestCase\TestPlan_V1.0.xlsx"
+
 2. The RESULT snapshot will save on "D:\AutomatedTest\Twitch\Snapshot\{DATE}"
 
 ### Prerequisites
 
-1.Install Visual Studio 2019 IDE 
-2.Ｄrive "D" in machine
+1.Install Visual Studio 2019 IDE
+
+2.Drive "D" in machine
 
 ## Built With
 
