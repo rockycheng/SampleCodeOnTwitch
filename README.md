@@ -10,9 +10,9 @@ Test On Twitch
 
 ## Prerequisites
 
-1.Install Visual Studio 2019 IDE
+1. Install Visual Studio 2019 IDE
 
-2.Drive "D" in machine
+2. Drive "D" in machine
 
 ## Built With
 
