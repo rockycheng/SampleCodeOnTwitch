@@ -85,6 +85,26 @@ namespace Test.Selenium.Common.Specs
             WebMouseController.MouseOverToElement(cssSelector);
         }
 
+        [Given(@"ScrollDownToBottom")]
+        public void GivenScrollDownToBottom()
+        {
+            CommonController.ScrollDownToWindowContentViewAreaBottom();
+        }
+
+        [Given(@"ScrollUpToTop")]
+        public void GivenScrollUpToTop()
+        {
+            CommonController.ScrollUpToWindowContentViewAreaTop();
+        }
+        
+
+        [Given(@"ClickLatestVideo On (.*)")]
+        public void GivenClickLatestVideoOn_(string videoOwner)
+        {
+            CommonController.ClickLatestVideo(videoOwner);
+        }
+
+
         #endregion
 
     }

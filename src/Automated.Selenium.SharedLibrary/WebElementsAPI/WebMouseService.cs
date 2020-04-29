@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using Automated.Selenium.SharedLibrary.Services;
 using log4net;
 using OpenQA.Selenium;
@@ -72,7 +73,18 @@ namespace Automated.Selenium.SharedLibrary.WebElementsAPI
             action.DoubleClick().Build().Perform();
         }
 
+        public void ScrollDownToWindowContentViewAreaBottom()
+        {
+            var webDriver = WebDriverHelper._webDriver;
+            Actions action = new Actions(webDriver);
+            action.SendKeys(Keys.Control + Keys.End).Perform();
+        }
 
-
+        public void ScrollUpToWindowContentViewAreaTop()
+        {
+            var webDriver = WebDriverHelper._webDriver;
+            Actions action = new Actions(webDriver);
+            action.SendKeys(Keys.Home).Perform();
+        }
     }
 }

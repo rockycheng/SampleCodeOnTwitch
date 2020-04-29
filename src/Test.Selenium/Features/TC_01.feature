@@ -10,9 +10,13 @@ Scenario: 01_000_Confirm_The_Index_Page
 
 @Twitch
 Scenario: 01_001_Confirm_The_Specific_Video_Can_Play
-	Given Input Monster Hunter World The_Elegist On Input_Search By cssSelector
+	Given Input Monster Hunter World On Input_Search By cssSelector
 	Given Click Button_Search By cssSelector
-	Given Click Video_Latest By cssSelector
+	Given ScrollDownToBottom
+	Given Click Button_ShowMoreVideo By cssSelector
+	Given ScrollDownToBottom
+	Given Click Button_ShowAllVideo By cssSelector
+	Given ClickLatestVideo On The_Elegist
 	Given Snapshot Warn_Accept page
 	Given Click Warn_Accept By cssSelector
 	Given Snapshot Video_Stream_Zero_Sceond page

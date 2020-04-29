@@ -58,7 +58,15 @@ namespace Test.Selenium.Common.Controllers
         {
             WebMouseService.MouseClick(element);
         }
+        
+        public void ScrollDownToWindowContentViewAreaBottom()
+        {
+            WebMouseService.ScrollDownToWindowContentViewAreaBottom();
+        }
 
-
+        public void ScrollUpToWindowContentViewAreaTop()
+        {
+            WebMouseService.ScrollUpToWindowContentViewAreaTop();
+        }
     }
 }

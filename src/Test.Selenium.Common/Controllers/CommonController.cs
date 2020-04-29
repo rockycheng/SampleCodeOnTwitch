@@ -1,4 +1,9 @@
-﻿namespace Test.Selenium.Common.Controllers
+﻿using System.Collections.ObjectModel;
+using System.Linq;
+using Automated.Selenium.SharedLibrary.Constants;
+using OpenQA.Selenium;
+
+namespace Test.Selenium.Common.Controllers
 {
     using System;
     using System.Threading;
@@ -133,6 +138,47 @@
         public void CreateAccount()
         {
             CommonService.CreateAccount();
+        }
+
+        public void ScrollDownToWindowContentViewAreaBottom()
+        { 
+            WebMouseController.ScrollDownToWindowContentViewAreaBottom();
+        }
+
+        public void ScrollUpToWindowContentViewAreaTop()
+        {
+            WebMouseController.ScrollUpToWindowContentViewAreaTop();
+        }
+        
+        public void ClickLatestVideo(string videoOwner)
+        {
+            _log.Info($"====  Figure out the latest video by owner: {videoOwner} ====");
+            var KeepScrollDown = true;
+            var count = 0;
+            //"The_Elegist" => "the_elegist"
+            var formateVideoOwner = videoOwner.ToLower();
+            var elementName = $"a[href*='/{formateVideoOwner}/']";
+            ReadOnlyCollection<IWebElement> resultList;
+            do
+            {
+                resultList = WebElementsController.FindElementsByCssSelector(elementName);
+                if (resultList.Count == 0)
+                {
+                    count = count++;
+                    ScrollDownToWindowContentViewAreaBottom();
+                    Thread.Sleep(500);//wait for the data sync
+                }
+                else
+                {
+                    KeepScrollDown = false;
+                }
+
+            } while (KeepScrollDown);
+
+            _log.Info($"====  Totally scroll down count: {count} ====");
+            //Click the latest video
+            resultList.Last().Click();
+
         }
     }
 }

@@ -161,16 +161,20 @@ namespace Automated.Selenium.SharedLibrary.WebElementsAPI
             {
                 key = Keys.Enter;
             }
+           
+            if (keyValue == CommonConstants.KeyEnd)
+            {
+                key = Keys.End;
+            }
+
+            if (keyValue == CommonConstants.KeyHome)
+            {
+                key = Keys.Home;
+            }
 
             Press(0, element, key);
         }
 
-        /// <summary>
-        /// interval: type speed 
-        /// </summary>
-        /// <param name="interval"> </param>
-        /// <param name="element"></param>
-        /// <param name="keys"></param>
         public void Press(int interval, IWebElement element, string keys)
         {
             var charArray = keys.ToCharArray();
